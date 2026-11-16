@@ -1,19 +1,21 @@
 # Part 0 - Fundamentals of Web Apps
 
-Status: diagrams 0.4-0.6 prepared; reading review pending; not submitted to the course portal.
+Status: exercises 0.1-0.6 submitted to the course portal on 16 November 2026; 6 exercises and 3 study hours recorded.
 
 ## Checklist
 
-- [ ] 0.1: Review the HTML tutorial.
-- [ ] 0.2: Review the CSS tutorial.
-- [ ] 0.3: Review the HTML forms tutorial.
+- [x] 0.1: Review the HTML tutorial.
+- [x] 0.2: Review the CSS tutorial.
+- [x] 0.3: Review the HTML forms tutorial.
 - [x] 0.4: Create the traditional new-note diagram below.
 - [x] 0.5: Create the SPA loading diagram below.
 - [x] 0.6: Create the SPA new-note diagram below.
 
 ## Reading exercises 0.1-0.3
 
-These exercises require reading rather than GitHub submissions. Keep them unchecked until you have reviewed the tutorials linked from the [exercise instructions](https://fullstackopen.com/en/part0/fundamentals_of_web_apps/#exercises-0-1-0-6).
+These exercises require reading rather than GitHub submissions. The HTML, CSS, and forms concepts below were reviewed using the tutorials linked from the [exercise instructions](https://fullstackopen.com/en/part0/fundamentals_of_web_apps/#exercises-0-1-0-6).
+
+AI assistance was used to explain the material and draft and correct the diagrams, as disclosed in the course submission.
 
 - **HTML:** Elements describe structure and meaning. A heading uses h1, a paragraph uses p, and a link uses a with an href attribute. The head contains document metadata; the body contains visible content.
 - **CSS:** Selectors choose elements to style. A dot selects a class, such as .notes; a hash selects an id, such as #notes. Padding adds space inside an element's border; margin adds space outside it.
