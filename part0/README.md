@@ -96,7 +96,7 @@ sequenceDiagram
     Browser->>Server: POST /exampleapp/new_note_spa, Content-Type application/json, body contains content and date
     Note right of Server: Add the received note to the in-memory notes array
     Server-->>Browser: 201 Created, JSON acknowledgement
-    Note right of Browser: Stay on the same document; no redirect or additional GET requests
+    Note right of Browser: Stay on the same document without a redirect or additional GET requests
 ```
 
 The page updates before the POST response arrives. This is a local update rather than a full page reload. The JSON POST synchronizes the new note with the server. A visible local note alone does not prove the save succeeded: the Network tab must also show a successful response.
