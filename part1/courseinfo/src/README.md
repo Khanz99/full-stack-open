@@ -1,28 +1,19 @@
-# Course information - exercises 1.1-1.5
+# Part 1 - Introduction to React
 
-Final version of the Full Stack Open course information app, prepared with AI assistance.
+AI-assisted implementations of exercises 1.1-1.14. The final versions of each application are included, as permitted by the course instructions.
 
-## Run and check
+| Directory | Exercises | Main concepts |
+| --- | --- | --- |
+| courseinfo | 1.1-1.5 | Components, props, objects, arrays |
+| unicafe | 1.6-1.11 | State, event handlers, derived values, conditional rendering, tables |
+| anecdotes | 1.12-1.14 | Random selection, immutable array updates, finding the most voted item |
 
-```sh
-npm ci
-npm run dev
-npm run lint
-npm run build
-```
+Each app is independent. Open its directory, run npm ci, then npm run dev. Use the local URL printed by Vite. Each app README explains the code, the exercise progression, and manual checks.
 
-## How the code develops
+AI assistance was used to explain the material, implement the apps, and verify their behavior. Review the code and try the suggested changes to build understanding before marking the exercises complete in the course portal.
 
-- **1.1:** Extract Header, Content, and Total; App owns the data and passes props down.
-- **1.2:** Content reuses Part three times instead of repeating its markup.
-- **1.3:** Each topic becomes an object with name and exercises properties. Part reads those properties rather than trying to render the entire object.
-- **1.4:** Collect the topic objects in one parts array and pass that array to Content and Total.
-- **1.5:** Store everything in one course object: course.name and course.parts.
+Part 1 has not been submitted to the course portal.
 
-In App.jsx, Header receives the string course.name. Content receives the array course.parts and passes each item to Part. Total adds the exercises properties and displays 31. Destructuring in a parameter, such as ({ parts }), extracts that property from the props object.
+## Validation
 
-The course permits assuming exactly three parts here. Rendering an arbitrary-length list is covered in Part 2.
-
-Try changing the first exercises value from 10 to 11. Its row should show 11 and the total should change from 31 to 32. Restore 10 afterward.
-
-Instructions: https://fullstackopen.com/en/part1/java_script/
+All three apps passed npm run lint and npm run build. Browser checks confirmed the course information total is 31; Unicafe initially shows no feedback, then 2 good / 1 neutral / 1 bad produces total 4, average 0.25, positive 50%; anecdotes retain separate vote counts and update the leader when another item overtakes it (3 votes versus 2). No application errors were shown in the browser console during these checks.
